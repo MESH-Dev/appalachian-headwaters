@@ -1,0 +1,117 @@
+// Typography
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @font-face {
+//     font-family: 'verlag-black';
+//     src: url('fonts/Verlag-Black.ttf');
+//          //url('dulcelin-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+@mixin brandon{
+  font-family: "brandon-grotesque";
+}
+
+@mixin brandon-bold{
+  @include brandon;
+  font-weight: 700;
+}
+
+@mixin brandon-reg{
+  @include brandon;
+  font-weight: 400;
+}
+
+@mixin franklin{
+  font-family: "franklin-gothic-urw";
+}
+
+@mixin franklin-reg{
+  @include franklin;
+  font-weight:400;
+}
+
+@mixin franklin-med{
+  @include franklin;
+  font-weight:500;
+}
+
+@mixin franklin-demi{
+  @include franklin;
+  font-weight:700;
+}
+
+@mixin franklin-demi{
+  @include franklin;
+  font-weight:900;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 { font-size: 4.6rem; line-height: 1.2;  letter-spacing: .0072em;  }
+h2 { font-size: 3.2rem; line-height: 1.25; letter-spacing: .001em;  }
+h3 { font-size: 2.4rem; line-height: 1.3;  letter-spacing: .0036em;  }
+h4 { font-size: 2rem; line-height: 1.35; letter-spacing: .0036em; }
+h5 { font-size: 2em; line-height: 1.5;  letter-spacing: .001em; }
+h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0;       }
+
+ 
+@media($bp-smaller-than-tablet) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+body{
+  @include franklin-med;
+}
+
+p {
+  font-size: 1.6rem;  
+  line-height: 1.428; 
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  @include franklin-med;
+}
+
+h1, h2{
+  @include franklin-reg;
+}
+
+h3, h4, h5, h6{
+  @include brandon-bold;
+}
+
+h1, h5, p{
+  color:$black;
+}
+
+h2{
+  color:$darkest_blue;
+}
+
+h3{
+  color:$olive_drab;
+}
+
+h4{
+  color:$dark_blue
+}
+
+//Set the text transform for text pages
+.the-content{
+    h2, h3, h4, h5, h6{
+    text-transform:uppercase;
+  }
+}
+

@@ -1,0 +1,98 @@
+footer{
+	
+	.brand-row{
+		background-color:$black;
+		padding:2em 1em;
+		color:$white;
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		addr{
+			color:$white;
+			padding:0;
+			margin:0;
+
+		}
+
+		.footer-logo{
+			text-align:center;
+			
+			img{
+				width:225px;
+				height:auto;
+			}
+		}
+
+	}
+
+	.signature-row{
+		color:$black;
+		font-size:1.6em;
+		padding:.5em 1em;
+		.sig{
+			text-align:right;
+			
+			@media($bp-smaller-than-tablet){
+				text-align:center;
+			}
+		}
+
+	}
+
+	.social-nav{
+		float:right;
+		padding:0;
+		margin:0;
+		height:100%;
+	    z-index: 10;
+    	position: relative;
+		li{
+			list-style-type: none;
+			display:inline-block;
+			//float:left;
+			padding:0;
+			margin:0;
+			height:100%;
+			margin-right:1em;
+			height:4.7em;
+
+			a{
+				font-size:1.5em;
+				height:100%;
+
+				span{
+					margin:.75em 0;
+				}
+				.fa-circle{
+					color:$light_orange;
+				}
+
+				.fa-stack-1x{
+					font-size:1.25em;
+				}
+				&:hover,
+				&:focus,
+				&:active{
+					.fa-circle{
+						color:$black;
+					}
+				}
+			}
+		}
+	}
+
+	@media($bp-smaller-than-tablet){
+		.brand-row,
+		.signature-row{
+			text-align:center;
+		}
+
+		.social-nav{
+			float:initial;
+		}
+	}
+}
