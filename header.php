@@ -18,7 +18,8 @@
 
 	<!-- Meta / og: tags -->
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="meshdesign">
+	<meta name="host" content="">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -93,7 +94,7 @@
 						<h1 class="site-title sr-only">
 							<?php bloginfo( 'name' ); ?>
 						</h1>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
+						<img alt="Appalachian Headwaters logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
 					</a>
 				</div>
 				<nav class="main-navigation">
