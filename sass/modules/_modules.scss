@@ -199,8 +199,8 @@ a{
 	}
 	.grid-item{
 		background-repeat:no-repeat;
-		//background-size:cover;
-		background-size:200%;
+		background-size:cover;
+		//background-size:200%;
 		background-position:center center;
 		background-blend-mode: multiply;
 		text-align:center;
@@ -208,7 +208,8 @@ a{
 
 		&.img{
 			background-repeat:no-repeat; 
-			background-size:200%; 
+			//background-size:200%; 
+			background-size:cover;
 			background-position:center center;
 		}
 
@@ -431,7 +432,8 @@ a{
 
 	.grid-item.img{
 		background-repeat:no-repeat; 
-		background-size:200%; 
+		//background-size:200%; 
+		background-size:cover;
 		background-position:center center;
 	}
 
@@ -488,7 +490,8 @@ a{
 // Single posts and Text (Default) Pages
 
 .post-single, 
-.text-single{
+.text-single,
+.four-oh-four{
 	background-image: url(img/plantbrown2x.png), url(img/beebrown2x.png);
 	background-repeat:no-repeat;
 	background-position: left top, right 90%;
@@ -499,6 +502,17 @@ a{
 
 	margin-bottom:6em;
 
+}
+
+//404 sitemap menu
+.sitemap-menu{
+	li{
+		list-style-type: none;
+		font-size:1.6rem;
+		.sub-menu{
+			margin-left:2em;
+		}
+	}
 }
 
 //Addthis

@@ -92,12 +92,8 @@ h3, h4, h5, h6{
   @include brandon-bold;
 }
 
-h1, h5, p{
+h1, h2, h5, p{
   color:$black;
-}
-
-h2{
-  color:$darkest_blue;
 }
 
 h3{

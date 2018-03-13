@@ -33,7 +33,8 @@ register_nav_menus(
     array(
         'main_nav_1' => 'Heeader navigation, 1st half',
         'main_nav_2' => 'Heeader navigation, 2nd half',
-        'social_nav' => 'Social menu used throughout'
+        'social_nav' => 'Social menu used throughout',
+        'site_map' => 'Site map for the entire site'
     )
 );
 

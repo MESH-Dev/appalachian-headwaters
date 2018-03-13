@@ -4,11 +4,11 @@
 	<div class="brand-row row">
 		<div class="content">
 			<div class="columns-2 footer-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" />
+				<img alt="Appalachian Headwaters logo" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" />
 			</div>
 			<div class="columns-5">
 				<p>
-					123 Examble Street, City Name, State Name, 12345</br>
+					123 Examble Street, City Name, State Name, 12345<br />
 					123-456-7890 | info@example.com
 				</p>
 			</div>
@@ -16,6 +16,7 @@
 				<ul class="social-nav">
 					<li>
 						<a href="#">
+							<span class="sr-only">Appalachian Headwaters on Facebook</span>
 							<span class="fa-stack">
 						  		<i class="fas fa-circle fa-stack-2x"></i>
 						  		<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -24,6 +25,7 @@
 					</li>
 					<li>
 						<a href="#">
+							<span class="sr-only">Appalachian Headwaters twitter feed</span>
 							<span class="fa-stack">
 							  <i class="fas fa-circle fa-stack-2x"></i>
 							  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -32,6 +34,7 @@
 					</li>
 					<li>
 						<a href="#">
+							<span class="sr-only">Appalachian Headwaters on Instagram feed</span>
 							<span class="fa-stack">
 							  <i class="fas fa-circle fa-stack-2x"></i>
 							  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
@@ -40,6 +43,7 @@
 					</li>
 					<li>
 						<a href="#">
+							<span class="sr-only">Appalachian Headwaters on Linkedin</span>
 							<span class="fa-stack">
 							  <i class="fas fa-circle fa-stack-2x"></i>
 							  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>

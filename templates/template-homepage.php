@@ -29,6 +29,7 @@ get_header(); ?>
 					$co_type = get_sub_field('callout_type');
 					$co_icon = get_sub_field('callout_icon');
 					$co_icon_URL = $co_icon['sizes']['large'];
+					$co_icon_alt = $co_icon['alt'];
 					$co_title = get_sub_field('callout_title');
 					$co_desc = get_sub_field('callout_description');
 					$co_link = get_sub_field('callout_link');
@@ -45,12 +46,12 @@ get_header(); ?>
 
 					?>
 					<a href="<?php echo $co_link; ?>">
-						<article class="grid-item columns-4 no-padding <?php echo $type_class; ?>" style="position:relative; 	background-image:url(<?php echo $co_bg_url; ?>);">
+						<article class="grid-item co columns-4 no-padding <?php echo $type_class; ?>" style="position:relative; 	background-image:url(<?php echo $co_bg_url; ?>);">
 							<div class="wrap">	
 								<div class="content">
 									<div class="title">
 										<div class="icon-container">
-											<img class="icon" src="<?php echo $co_icon_URL; ?>" />
+											<img class="icon" alt="<?php echo $co_icon_alt; ?>" src="<?php echo $co_icon_URL; ?>" />
 										</div>
 										<h2><?php echo $co_title; ?></h2>
 									</div>

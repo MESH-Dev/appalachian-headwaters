@@ -76,6 +76,13 @@ $max-width: 1200px;
 		padding-right: 0;
 	}
 
+	&.grid-item.co{
+		@media($bp-smaller-than-desktop){
+			width: 100%;
+	    	padding: 0;
+		}
+	}
+
 	@media($bp-smaller-than-tablet) {
 	    width: 100%;
 	    padding: 0;
@@ -92,14 +99,17 @@ $max-width: 1200px;
 		.columns-3.tweener{
 	  		width: grid-column-width(6);
 	    	padding: 0;	
+	    	margin-bottom:2em;
 	  	}
 
 	  	.row a{
 		  		.columns-4.tweener{
 		  			width: grid-column-width(6);
+		  			margin-bottom:2em;
 		  		}
 		  		&:last-of-type .columns-4.tweener{
 		  			width: grid-column-width(12);
+		  			margin-bottom:2em;
 		  		}
 		  	}
 	  	
@@ -111,6 +121,7 @@ $max-width: 1200px;
 	.columns-3.tweener, .row a .columns-4.tweener{
 	  		width: 100%;
 	    	padding: 0;	
+	    	margin-bottom:2em;
 	  	}
 
 
