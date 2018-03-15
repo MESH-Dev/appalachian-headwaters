@@ -12,21 +12,24 @@
 	background-position:center center;
 	//background-blend-mode: multiply;
 	//background-attachment: fixed;
-	// .curtain{
-	// 	position:absolute;
-	// 	top:0;
-	// 	bottom:0;
-	// 	right:0;
-	// 	left:0;
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// 	background-position:center center;
-	// 	background-blend-mode: multiply;
-	// }
+	.curtain{
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position:center center;
+		// background-blend-mode: multiply;
+		background-color:rgba(15,15,15, .2);
+	}
 	.content{
 		display:table-cell;
 		height:100%;
 		vertical-align: middle;
+		position: relative;
+		z-index: 2;
 		h2{
 			width:60%;
 			margin:0 auto;

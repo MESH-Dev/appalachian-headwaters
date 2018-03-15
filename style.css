@@ -1434,13 +1434,24 @@ footer .social-nav li a:hover .fa-circle, footer .social-nav li a:focus .fa-circ
   background-size: cover;
   background-position: center center;
 }
-/* line 26, sass/modules/_modules.scss */
+/* line 15, sass/modules/_modules.scss */
+.hero-banner .curtain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(15, 15, 15, 0.2);
+}
+/* line 27, sass/modules/_modules.scss */
 .hero-banner .content {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
+  position: relative;
+  z-index: 2;
 }
-/* line 30, sass/modules/_modules.scss */
+/* line 33, sass/modules/_modules.scss */
 .hero-banner .content h2 {
   width: 60%;
   margin: 0 auto;
@@ -1450,41 +1461,41 @@ footer .social-nav li a:hover .fa-circle, footer .social-nav li a:focus .fa-circ
   text-transform: none;
 }
 @media only screen and (max-width: 750px) {
-  /* line 30, sass/modules/_modules.scss */
+  /* line 33, sass/modules/_modules.scss */
   .hero-banner .content h2 {
     width: 95%;
     margin: 0 auto;
     font-size: 2.6em;
   }
 }
-/* line 46, sass/modules/_modules.scss */
+/* line 49, sass/modules/_modules.scss */
 .hero-banner .to-content {
   margin: 4em 0;
   position: relative;
   z-index: 100;
 }
-/* line 50, sass/modules/_modules.scss */
+/* line 53, sass/modules/_modules.scss */
 .hero-banner .to-content svg {
   cursor: pointer;
 }
-/* line 52, sass/modules/_modules.scss */
+/* line 55, sass/modules/_modules.scss */
 .hero-banner .to-content svg .arrow-path {
   fill: #FFFFFF;
 }
-/* line 55, sass/modules/_modules.scss */
+/* line 58, sass/modules/_modules.scss */
 .hero-banner .to-content svg .circle-path {
   stroke: #FFFFFF;
 }
-/* line 64, sass/modules/_modules.scss */
+/* line 67, sass/modules/_modules.scss */
 .hero-banner .to-content svg:hover .arrow-path, .hero-banner .to-content svg:active .arrow-path, .hero-banner .to-content svg:focus .arrow-path {
   fill: #E5AB41;
 }
-/* line 67, sass/modules/_modules.scss */
+/* line 70, sass/modules/_modules.scss */
 .hero-banner .to-content svg:hover .circle-path, .hero-banner .to-content svg:active .circle-path, .hero-banner .to-content svg:focus .circle-path {
   stroke: #E5AB41;
 }
 
-/* line 76, sass/modules/_modules.scss */
+/* line 79, sass/modules/_modules.scss */
 .hyphen {
   width: 2em;
   height: 3px;
@@ -1492,30 +1503,30 @@ footer .social-nav li a:hover .fa-circle, footer .social-nav li a:focus .fa-circ
   margin: 3em auto;
 }
 
-/* line 86, sass/modules/_modules.scss */
+/* line 89, sass/modules/_modules.scss */
 .text-row .hyphen {
   background: #17262F;
 }
 
-/* line 91, sass/modules/_modules.scss */
+/* line 94, sass/modules/_modules.scss */
 .inner-content {
   padding-top: 6em;
 }
 
-/* line 95, sass/modules/_modules.scss */
+/* line 98, sass/modules/_modules.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 102, sass/modules/_modules.scss */
+/* line 105, sass/modules/_modules.scss */
 .greeting-row {
   min-height: 300px;
   padding: 10em 0;
   position: relative;
   overflow: visible !important;
 }
-/* line 108, sass/modules/_modules.scss */
+/* line 111, sass/modules/_modules.scss */
 .greeting-row #right,
 .greeting-row #left {
   position: absolute;
@@ -1525,90 +1536,90 @@ img {
   height: 100%;
   width: 100%;
 }
-/* line 118, sass/modules/_modules.scss */
+/* line 121, sass/modules/_modules.scss */
 .greeting-row #left {
   background-image: url(img/plantbrown2x_full.png);
   background-position: -50px top;
 }
-/* line 123, sass/modules/_modules.scss */
+/* line 126, sass/modules/_modules.scss */
 .greeting-row #right {
   background-image: url(img/beebrown2x_full.png);
   background-position: 101% 100%;
 }
-/* line 129, sass/modules/_modules.scss */
+/* line 132, sass/modules/_modules.scss */
 .greeting-row h2 {
   font-size: 3.8em;
   text-transform: none;
 }
 @media (max-width: 750px) {
-  /* line 129, sass/modules/_modules.scss */
+  /* line 132, sass/modules/_modules.scss */
   .greeting-row h2 {
     font-size: 2.5em;
   }
 }
-/* line 137, sass/modules/_modules.scss */
+/* line 140, sass/modules/_modules.scss */
 .greeting-row .content {
   position: relative;
   z-index: 100;
 }
 
-/* line 143, sass/modules/_modules.scss */
+/* line 146, sass/modules/_modules.scss */
 .greeting-cta {
   color: #DD873E;
   text-transform: uppercase;
 }
-/* line 147, sass/modules/_modules.scss */
+/* line 150, sass/modules/_modules.scss */
 .greeting-cta span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 152, sass/modules/_modules.scss */
+/* line 155, sass/modules/_modules.scss */
 .greeting-cta span.text {
   padding-right: 1em;
 }
-/* line 155, sass/modules/_modules.scss */
+/* line 158, sass/modules/_modules.scss */
 .greeting-cta span.img {
   padding-top: 4px;
 }
-/* line 158, sass/modules/_modules.scss */
+/* line 161, sass/modules/_modules.scss */
 .greeting-cta svg {
   height: 2em;
   width: 1em;
 }
-/* line 161, sass/modules/_modules.scss */
+/* line 164, sass/modules/_modules.scss */
 .greeting-cta svg .arrow {
   fill: #DD873E;
 }
-/* line 166, sass/modules/_modules.scss */
+/* line 169, sass/modules/_modules.scss */
 .greeting-cta:hover, .greeting-cta:focus, .greeting-cta:active {
   color: #17262F;
 }
-/* line 171, sass/modules/_modules.scss */
+/* line 174, sass/modules/_modules.scss */
 .greeting-cta:hover svg .arrow, .greeting-cta:focus svg .arrow, .greeting-cta:active svg .arrow {
   fill: #17262F;
 }
 
-/* line 178, sass/modules/_modules.scss */
+/* line 181, sass/modules/_modules.scss */
 a {
   color: #17262F;
 }
-/* line 180, sass/modules/_modules.scss */
+/* line 183, sass/modules/_modules.scss */
 a:hover, a:active, a:focus {
   color: #DD873E;
   text-decoration: none;
 }
 
-/* line 193, sass/modules/_modules.scss */
+/* line 196, sass/modules/_modules.scss */
 .grid.inner .row:not(.text-row) {
   margin-bottom: 2em;
 }
 @media (max-width: 1100px) {
-  /* line 193, sass/modules/_modules.scss */
+  /* line 196, sass/modules/_modules.scss */
   .grid.inner .row:not(.text-row) {
     margin-bottom: 0;
   }
 }
-/* line 200, sass/modules/_modules.scss */
+/* line 203, sass/modules/_modules.scss */
 .grid .grid-item {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1616,47 +1627,47 @@ a:hover, a:active, a:focus {
   background-blend-mode: multiply;
   text-align: center;
 }
-/* line 209, sass/modules/_modules.scss */
+/* line 212, sass/modules/_modules.scss */
 .grid .grid-item.img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 216, sass/modules/_modules.scss */
+/* line 219, sass/modules/_modules.scss */
 .grid .grid-item.bees {
   background-color: #DD873E;
 }
-/* line 220, sass/modules/_modules.scss */
+/* line 223, sass/modules/_modules.scss */
 .grid .grid-item.forestation {
   background-color: #0CABA0;
 }
-/* line 224, sass/modules/_modules.scss */
+/* line 227, sass/modules/_modules.scss */
 .grid .grid-item.plants {
   background-color: #95C662;
 }
-/* line 230, sass/modules/_modules.scss */
+/* line 233, sass/modules/_modules.scss */
 .grid .grid-item.orange {
   background-color: rgba(221, 135, 62, 0.5);
 }
-/* line 235, sass/modules/_modules.scss */
+/* line 238, sass/modules/_modules.scss */
 .grid .grid-item.blue {
   background-color: rgba(12, 171, 160, 0.5);
 }
-/* line 240, sass/modules/_modules.scss */
+/* line 243, sass/modules/_modules.scss */
 .grid .grid-item.yellow {
   background-color: rgba(229, 171, 65, 0.5);
 }
-/* line 245, sass/modules/_modules.scss */
+/* line 248, sass/modules/_modules.scss */
 .grid .grid-item.green {
   background-color: rgba(149, 198, 98, 0.5);
 }
-/* line 250, sass/modules/_modules.scss */
+/* line 253, sass/modules/_modules.scss */
 .grid .grid-item .wrap {
   display: table;
   height: 100%;
   width: 100%;
 }
-/* line 256, sass/modules/_modules.scss */
+/* line 259, sass/modules/_modules.scss */
 .grid .grid-item .content {
   display: table-cell;
   width: 100%;
@@ -1664,7 +1675,7 @@ a:hover, a:active, a:focus {
   vertical-align: middle;
   padding: 1em;
 }
-/* line 264, sass/modules/_modules.scss */
+/* line 267, sass/modules/_modules.scss */
 .grid .grid-item .desc {
   color: #FFFFFF;
   width: 50%;
@@ -1673,17 +1684,17 @@ a:hover, a:active, a:focus {
   transition: opacity .8s ease-in-out;
   transition-delay: .3s;
 }
-/* line 280, sass/modules/_modules.scss */
+/* line 283, sass/modules/_modules.scss */
 .grid .grid-item .hyphen {
   opacity: 0;
   transition: opacity .1s ease-in-out;
 }
-/* line 286, sass/modules/_modules.scss */
+/* line 289, sass/modules/_modules.scss */
 .grid .grid-item .cta {
   color: #FFFFFF;
   text-transform: uppercase;
 }
-/* line 291, sass/modules/_modules.scss */
+/* line 294, sass/modules/_modules.scss */
 .grid .grid-item .hover {
   overflow: hidden;
   opacity: 0;
@@ -1691,62 +1702,62 @@ a:hover, a:active, a:focus {
   transform: scaleY(0);
   transform-origin: center;
 }
-/* line 305, sass/modules/_modules.scss */
+/* line 308, sass/modules/_modules.scss */
 .grid .grid-item .title {
   transform: translateY(100%);
   transform-origin: top;
   transition: transform .3s linear;
 }
-/* line 315, sass/modules/_modules.scss */
+/* line 318, sass/modules/_modules.scss */
 .grid .grid-item .cta {
   opacity: 0;
   transform: translateX(1em);
   transition: opacity .3s linear, transform .2s linear;
   transition-delay: .7s;
 }
-/* line 324, sass/modules/_modules.scss */
+/* line 327, sass/modules/_modules.scss */
 .grid .grid-item:hover .title {
   transform: translateY(0);
 }
-/* line 329, sass/modules/_modules.scss */
+/* line 332, sass/modules/_modules.scss */
 .grid .grid-item:hover .hover {
   opacity: 1;
   transform: scaleY(1);
 }
-/* line 336, sass/modules/_modules.scss */
+/* line 339, sass/modules/_modules.scss */
 .grid .grid-item:hover .hover .hyphen {
   opacity: 1;
 }
-/* line 339, sass/modules/_modules.scss */
+/* line 342, sass/modules/_modules.scss */
 .grid .grid-item:hover .hover .desc {
   opacity: 1;
 }
-/* line 349, sass/modules/_modules.scss */
+/* line 352, sass/modules/_modules.scss */
 .grid .grid-item:hover .hover .cta {
   opacity: 1;
   transform: translateX(0);
 }
-/* line 352, sass/modules/_modules.scss */
+/* line 355, sass/modules/_modules.scss */
 .grid .grid-item:hover .hover .cta:hover, .grid .grid-item:hover .hover .cta:active, .grid .grid-item:hover .hover .cta:focus {
   color: #DD873E;
 }
-/* line 363, sass/modules/_modules.scss */
+/* line 366, sass/modules/_modules.scss */
 .grid .grid-item .icon-container {
   width: 15%;
   margin: 0 auto;
   transform: translate3d(0, 0, 0);
 }
-/* line 367, sass/modules/_modules.scss */
+/* line 370, sass/modules/_modules.scss */
 .grid .grid-item .icon-container img {
   max-width: 100%;
   height: auto;
 }
-/* line 373, sass/modules/_modules.scss */
+/* line 376, sass/modules/_modules.scss */
 .grid .grid-item .icon,
 .grid .grid-item h2 {
   transition: all .2s ease-in-out;
 }
-/* line 378, sass/modules/_modules.scss */
+/* line 381, sass/modules/_modules.scss */
 .grid .grid-item h2 {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -1756,20 +1767,20 @@ a:hover, a:active, a:focus {
   font-size: 2em;
 }
 
-/* line 388, sass/modules/_modules.scss */
+/* line 391, sass/modules/_modules.scss */
 .row.text-row {
   margin-bottom: 0;
 }
-/* line 390, sass/modules/_modules.scss */
+/* line 393, sass/modules/_modules.scss */
 .row.text-row .text {
   text-align: center;
   margin: 0 auto;
 }
-/* line 393, sass/modules/_modules.scss */
+/* line 396, sass/modules/_modules.scss */
 .row.text-row .text .hyphen {
   margin: 4em auto;
 }
-/* line 396, sass/modules/_modules.scss */
+/* line 399, sass/modules/_modules.scss */
 .row.text-row .text h2 {
   font-size: 2em;
   margin: 0;
@@ -1778,79 +1789,79 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
 }
 
-/* line 408, sass/modules/_modules.scss */
+/* line 411, sass/modules/_modules.scss */
 .fadeIn {
   opacity: 1 !important;
 }
 
-/* line 413, sass/modules/_modules.scss */
+/* line 416, sass/modules/_modules.scss */
 .posts .post:nth-of-type(n+2) {
   opacity: 0;
   transition: opacity .3s linear;
 }
-/* line 418, sass/modules/_modules.scss */
+/* line 421, sass/modules/_modules.scss */
 .posts .post.row {
   margin-bottom: 4em;
   transition: .3s linear;
   padding: 2em;
 }
-/* line 423, sass/modules/_modules.scss */
+/* line 426, sass/modules/_modules.scss */
 .posts .post.row:hover {
   -webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
-/* line 433, sass/modules/_modules.scss */
+/* line 436, sass/modules/_modules.scss */
 .posts .grid-item.img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 441, sass/modules/_modules.scss */
+/* line 444, sass/modules/_modules.scss */
 .posts .post .title {
   color: #17262F;
 }
-/* line 446, sass/modules/_modules.scss */
+/* line 449, sass/modules/_modules.scss */
 .posts .more-link {
   color: #DD873E;
   text-transform: uppercase;
   font-family: "franklin-gothic-urw";
   font-weight: 500;
 }
-/* line 456, sass/modules/_modules.scss */
+/* line 459, sass/modules/_modules.scss */
 .posts .more-link span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 461, sass/modules/_modules.scss */
+/* line 464, sass/modules/_modules.scss */
 .posts .more-link span.text {
   padding-right: 1em;
 }
-/* line 464, sass/modules/_modules.scss */
+/* line 467, sass/modules/_modules.scss */
 .posts .more-link span.img {
   padding-top: 4px;
 }
-/* line 467, sass/modules/_modules.scss */
+/* line 470, sass/modules/_modules.scss */
 .posts .more-link svg {
   height: 2em;
   width: 1em;
   margin-left: 1em;
 }
-/* line 471, sass/modules/_modules.scss */
+/* line 474, sass/modules/_modules.scss */
 .posts .more-link svg .arrow {
   fill: #DD873E;
 }
-/* line 476, sass/modules/_modules.scss */
+/* line 479, sass/modules/_modules.scss */
 .posts .more-link:active, .posts .more-link:hover, .posts .more-link:focus {
   color: #17262F;
   text-decoration: none;
 }
-/* line 482, sass/modules/_modules.scss */
+/* line 485, sass/modules/_modules.scss */
 .posts .more-link:active svg .arrow, .posts .more-link:hover svg .arrow, .posts .more-link:focus svg .arrow {
   fill: #17262F;
 }
 
-/* line 492, sass/modules/_modules.scss */
+/* line 495, sass/modules/_modules.scss */
 .post-single,
 .text-single,
 .four-oh-four {
@@ -1861,89 +1872,89 @@ a:hover, a:active, a:focus {
   margin-bottom: 6em;
 }
 
-/* line 509, sass/modules/_modules.scss */
+/* line 512, sass/modules/_modules.scss */
 .sitemap-menu li {
   list-style-type: none;
   font-size: 1.6rem;
 }
-/* line 512, sass/modules/_modules.scss */
+/* line 515, sass/modules/_modules.scss */
 .sitemap-menu li .sub-menu {
   margin-left: 2em;
 }
 
-/* line 521, sass/modules/_modules.scss */
+/* line 524, sass/modules/_modules.scss */
 .social-share span,
 .social-share .addthis_inline_share_toolbox {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 527, sass/modules/_modules.scss */
+/* line 530, sass/modules/_modules.scss */
 .social-share span {
   font-size: 1.6em;
   font-family: "franklin-gothic-urw";
   font-weight: 500;
 }
 
-/* line 537, sass/modules/_modules.scss */
+/* line 540, sass/modules/_modules.scss */
 .at-resp-share-element .at-share-btn {
   background-color: #DD873E !important;
 }
-/* line 540, sass/modules/_modules.scss */
+/* line 543, sass/modules/_modules.scss */
 .at-resp-share-element .at-share-btn:active, .at-resp-share-element .at-share-btn:hover, .at-resp-share-element .at-share-btn:focus {
   background-color: #17262F !important;
 }
 
 /* =WordPress Core
 -------------------------------------------------------------- */
-/* line 549, sass/modules/_modules.scss */
+/* line 552, sass/modules/_modules.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 553, sass/modules/_modules.scss */
+/* line 556, sass/modules/_modules.scss */
 .aligncenter,
 div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 559, sass/modules/_modules.scss */
+/* line 562, sass/modules/_modules.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 564, sass/modules/_modules.scss */
+/* line 567, sass/modules/_modules.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 569, sass/modules/_modules.scss */
+/* line 572, sass/modules/_modules.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 574, sass/modules/_modules.scss */
+/* line 577, sass/modules/_modules.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 578, sass/modules/_modules.scss */
+/* line 581, sass/modules/_modules.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 583, sass/modules/_modules.scss */
+/* line 586, sass/modules/_modules.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 589, sass/modules/_modules.scss */
+/* line 592, sass/modules/_modules.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -1953,22 +1964,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 597, sass/modules/_modules.scss */
+/* line 600, sass/modules/_modules.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 601, sass/modules/_modules.scss */
+/* line 604, sass/modules/_modules.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 605, sass/modules/_modules.scss */
+/* line 608, sass/modules/_modules.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 609, sass/modules/_modules.scss */
+/* line 612, sass/modules/_modules.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -1978,7 +1989,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 618, sass/modules/_modules.scss */
+/* line 621, sass/modules/_modules.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -1987,7 +1998,7 @@ a img.aligncenter {
 }
 
 /* Text meant only for screen readers. */
-/* line 626, sass/modules/_modules.scss */
+/* line 629, sass/modules/_modules.scss */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2002,7 +2013,7 @@ a img.aligncenter {
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
-/* line 639, sass/modules/_modules.scss */
+/* line 642, sass/modules/_modules.scss */
 .screen-reader-text:focus {
   background-color: #eee;
   clip: auto !important;
@@ -2021,7 +2032,7 @@ a img.aligncenter {
   /* Above WP toolbar. */
 }
 
-/* line 660, sass/modules/_modules.scss */
+/* line 663, sass/modules/_modules.scss */
 .sr-only {
   position: absolute;
   width: 1px;

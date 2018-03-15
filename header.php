@@ -49,6 +49,19 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<?php $bugherd = true; 
+
+	if($bugherd == true){?>
+	<script type='text/javascript'>
+		(function (d, t) {
+		  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		  bh.type = 'text/javascript';
+		  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=eracq2oyw273gxbxxofkdw';
+		  s.parentNode.insertBefore(bh, s);
+		  })(document, 'script');
+	</script>
+	<?php } ?>
+
 	<script>
 		var $dir = "<?php echo get_template_directory_uri(); ?>";
 	</script>
