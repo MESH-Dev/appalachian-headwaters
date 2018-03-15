@@ -3,10 +3,13 @@
 $hero_background = get_field('hero_image');
 	$hero_URL = $hero_background['sizes']['background-fullscreen'];
 	$intro_text = get_field('intro_text');
-
+	$overlay = get_field('overlay');
 ?>
 
 <section class="hero-banner" style="background-image:url(<?php echo $hero_URL; ?>); background-size:cover; background-repeat:no-repeat; height:100vh;">
+	<?php if ($overlay == true) { ?>
+	<div class="curtain" aria-hidden="true" ></div>
+	<?php } ?>
 	<div class="content">
 		<h2><?php echo get_the_title();//$intro_text; ?></h2>
 		<?php get_template_part('/partials/down-arrow'); ?>
