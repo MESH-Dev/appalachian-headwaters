@@ -1,5 +1,5 @@
 <section class="greeting-row" id="scrollr-row">
-	<div id="right" data-anchor-target="#scrollr-row" data-top="top:-30%" data--200-bottom="top:15%"></div><!-- style="background-attachment:fixed; top:0; bottom:0; right:0; left:0;" -->
+	<div id="right" data-anchor-target="#scrollr-row" data--400-top="top:-30%" data--200-bottom="top:15%"></div><!-- style="background-attachment:fixed; top:0; bottom:0; right:0; left:0;" -->
 	<div id="left"  data-anchor-target="#scrollr-row" data--200-top="top:-20%" data-bottom="top:0%"></div>
 	<section class="container">
 		<?php 

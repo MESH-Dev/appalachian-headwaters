@@ -12,7 +12,7 @@ get_header();
 	<?php if ($overlay == true) { ?>
 	<div class="curtain" aria-hidden="true" ></div>
 	<?php } ?><div class="content">
-		<h2><?php echo get_the_title();//$intro_text; ?></h2>
+		<h2 class="page-title"><?php echo get_the_title();//$intro_text; ?></h2>
 		<?php get_template_part('/partials/down-arrow'); ?>
 	</div>
 </section>

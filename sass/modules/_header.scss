@@ -34,7 +34,7 @@ header{
 		}
 	}
 
-	.subnav-trigger{
+	.subnav-trigger,.hover-arrow{
 		//display:none;
 		//@media ($bp-smaller-than-mobile){
 			display:inline-block;
@@ -51,6 +51,20 @@ header{
 				list-style-type: none;
 				// float:left;
 				// display:inline-block;
+				a{
+					.hover-arrow{
+						opacity: 0;
+
+					}
+					&:hover,
+					&:focus,
+					&:active{
+						color:$white;
+						.hover-arrow{
+							//z-index: 1;
+						}
+					}
+				}
 			}
 		}	
 	}
@@ -95,11 +109,18 @@ header{
 
 		ul.sub-menu{
 			li{
+				.hover-arrow{
+					opacity: 0;
+					transform:translateX(.25em);
+					transition:opacity .2s linear, transform .3s linear;
+				}
+
 				&:focus,
 				&:active,
 				&:hover{
+
 					 a{
-						color:$light_orange;
+						color:$white;
 						text-decoration: none;
 
 					}
@@ -112,10 +133,37 @@ header{
 						}
 					}
 
-					.subnav-trigger{
+					.hover-arrow{
+						opacity: 1;
+						transform:translateX(0);
 						svg{
 							.arrow{
-								fill:$light_orange !important;
+								//fill:$light_orange !important;
+							}
+						}
+						@media ($bp-smaller-than-tablet){
+								opacity:0;
+							}	
+					}
+
+					ul.sub-menu{
+						li{
+							.hover-arrow{
+								opacity:0;
+								transform:translateX(.25em);
+								transition:opacity .2s linear, transform .3s linear;
+							}
+
+							&:hover,
+							&:active,
+							&:focus{
+								.hover-arrow{
+									opacity:1;
+									transform:translateX(0);
+									@media ($bp-smaller-than-tablet){
+										opacity:0;
+									}	
+								}
 							}
 						}
 					}
@@ -131,7 +179,7 @@ header{
 						&:active,
 						&:hover{
 							 a{
-								color:$light_orange;
+								color:$white;
 								text-decoration: none;
 
 							}
@@ -147,7 +195,8 @@ header{
 		@media($bp-smaller-than-tablet){
 			display:block;
 			width:100%;
-			background:rgba(15,15,15,.8);	
+			background:rgba(15,15,15,.8);
+			padding:0 1em;
 			ul{
 				margin:0;
 				li{
@@ -173,7 +222,7 @@ header{
 				&:hover,
 				&:focus,
 				&:active{
-					color:$light_orange;
+					color:$white;
 					text-decoration: none;
 				}
 			}
@@ -254,7 +303,7 @@ header{
 					.sub-menu{
 						li{
 							.subnav-trigger{
-								opacity:1;
+								opacity:0;
 							}
 						}
 					}
@@ -342,6 +391,10 @@ header{
 					transform-origin:top;
 					transition-delay:.25s;
 					background:$black_rgba;	
+					@media ($bp-larger-than-tablet){
+						display: block !important;
+					}
+					
 
 					.wrap{
 						padding-bottom:0;

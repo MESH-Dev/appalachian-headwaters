@@ -93,7 +93,7 @@
 									'before'          => '<div class="wrap"><div class="content"><div class="icon" aria-hidden="true"></div>',
 									'after'           => '</div></div><div class="hyphen" aria-hidden="true"></div>',
 									'link_before'     => '<span>',
-									'link_after'      => '</span>',
+									'link_after'      => '</span><span class="hover-arrow">'.file_get_contents(get_template_directory().'/img/arrow-right-01_white.svg').'</span>',
 									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 									'depth'           => 0,
 									'walker'          => ''
@@ -125,7 +125,7 @@
 									'before'          => '<div class="wrap"><div class="content"><div class="icon" aria-hidden="true"></div>',
 									'after'           => '</div></div><div class="hyphen" aria-hidden="true"></div>',
 									'link_before'     => '<span>',
-									'link_after'      => '</span>',
+									'link_after'      => '</span><span class="hover-arrow">'.file_get_contents(get_template_directory().'/img/arrow-right-01_white.svg').'</span>',
 									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 									'depth'           => 0,
 									'walker'          => ''

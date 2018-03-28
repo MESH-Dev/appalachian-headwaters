@@ -27,6 +27,35 @@ footer{
 			}
 		}
 
+		.address{
+			//margin-top:4px;
+
+			span{
+				display: inline-block;
+				margin-top:2px;
+			}
+
+			a{
+				color:$white;
+				&:hover,
+				&:focus,
+				&:active{
+					color:$dark_orange;
+				}
+			}
+			.phone{
+				@media ($bp-smaller-than-mobile){
+					display:none;
+				}
+			}
+			.mobile-phone{
+				display:none;
+				@media ($bp-smaller-than-mobile){
+					display:block;
+				}
+			}
+		}
+
 	}
 
 	.signature-row{
@@ -68,7 +97,7 @@ footer{
 					margin:.75em 0;
 				}
 				.fa-circle{
-					color:$light_orange;
+					color:$dark_orange;
 				}
 
 				.fa-stack-1x{

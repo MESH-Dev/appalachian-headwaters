@@ -7,9 +7,9 @@
 				<img alt="Appalachian Headwaters logo" src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" />
 			</div>
 			<div class="columns-5">
-				<p>
-					123 Examble Street, City Name, State Name, 12345<br />
-					123-456-7890 | info@example.com
+				<p class="address">
+					<span>123 Examble Street, City Name, State Name, 12345</span><br />
+					<span><span class="phone">123-456-7890</span><span class="mobile-phone"><a href="tel:123-456-7890">123-456-7890</a></span> | <a href="mailto:info@example.com">info@example.com</a></span>
 				</p>
 			</div>
 			<div class="columns-5">
@@ -57,7 +57,7 @@
 	
 	<div class="signature-row row">
 		<div class="copyright columns-6">
-			&copy; <?php date('Y'); ?> Appalachian Headwaters
+			&copy; <?php echo date('Y'); ?> Appalachian Headwaters
 		</div>
 		<div class="sig columns-6">
 			Designed by <a href="http://meshfresh.com" target="_blank">MESH</a>

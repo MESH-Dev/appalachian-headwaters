@@ -13,7 +13,7 @@ get_header();
 		<div class="curtain" aria-hidden="true" ></div>
 	<?php } ?>
 	<div class="content">
-		<h2><?php echo $intro_text; ?></h2>
+		<h2 class="page-title"><?php echo $intro_text; ?></h2>
 		<?php get_template_part('/partials/down-arrow') ?>
 	</div>
 </section>

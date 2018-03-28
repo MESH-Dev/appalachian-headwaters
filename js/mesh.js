@@ -157,34 +157,36 @@ client.onreadystatechange = function() {
 
     //__-- Add our variable to our dom element
     $('.main-navigation ul > li.menu-item-has-children:first > .wrap > .content').append(file);
-    $('.main-navigation ul li ul > li.menu-item-has-children:first > .wrap > .content').append(file);
+    //$('.main-navigation ul li ul > li.menu-item-has-children:first > .wrap > .content').append(file);
 
+    //__-- Since we're technically creating our 'subnav-trigger' element after the DOM has loaded
+    //__-- we have to call our function AFTER the element is loaded into the DOM, so we add it here.
     $smclk = 0;
-$('.subnav-trigger').click(function(){
-  $smclk++;
-  if($smclk == 1){
-    $(this).parent().parent().parent().find('.sub-menu:first').slideDown('fast');
-    $(this).css({
-        '-moz-transform':'rotate(-90deg)',
-        '-webkit-transform':'rotate(-90deg)',
-        '-o-transform':'rotate(-90deg)',
-        '-ms-transform':'rotate(-90deg)',
-        'transform':'rotate(-90deg)'
-      })
-    console.log($smclk);
-  }else{
-    $(this).parent().parent().parent().find('.sub-menu:first').slideUp('fast');
-    $(this).css({
-        '-moz-transform':'rotate(0deg)',
-        '-webkit-transform':'rotate(0deg)',
-        '-o-transform':'rotate(0deg)',
-        '-ms-transform':'rotate(0deg)',
-        'transform':'rotate(0deg)'
-      });
-    $smclk=0;
-  }
-  
-})
+    $('.subnav-trigger').click(function(){
+      $smclk++;
+      if($smclk == 1){
+        $(this).parent().parent().parent().find('.sub-menu:first').slideDown('fast');
+        $(this).css({
+            '-moz-transform':'rotate(-90deg)',
+            '-webkit-transform':'rotate(-90deg)',
+            '-o-transform':'rotate(-90deg)',
+            '-ms-transform':'rotate(-90deg)',
+            'transform':'rotate(-90deg)'
+          })
+        console.log($smclk);
+      }else{
+        $(this).parent().parent().parent().find('.sub-menu:first').slideUp('fast');
+        $(this).css({
+            '-moz-transform':'rotate(0deg)',
+            '-webkit-transform':'rotate(0deg)',
+            '-o-transform':'rotate(0deg)',
+            '-ms-transform':'rotate(0deg)',
+            'transform':'rotate(0deg)'
+          });
+        $smclk=0;
+      }
+    
+    });
   } 
 };
 

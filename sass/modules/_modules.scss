@@ -30,17 +30,20 @@
 		vertical-align: middle;
 		position: relative;
 		z-index: 2;
-		h2{
+		.page-title{
 			width:60%;
 			margin:0 auto;
 			@include franklin;
 			font-size:4.6em;
 			color: white;
 			text-transform:none;
+			@media($bp-smaller-than-desktop){
+				font-size:3.6em;
+			}
 			@media only screen and ($bp-smaller-than-tablet){
 				width:95%;
 				margin:0 auto;
-				font-size:2.6em;
+				//font-size:2.6em;
 			}
 		}
 		
@@ -74,6 +77,10 @@
 			
 		}
 	}
+}
+
+.page-title{
+	
 }
 
 .hyphen{
@@ -216,19 +223,24 @@ a{
 			background-position:center center;
 		}
 
+		$alpha : .7;
+
 		&.bees{
-			background-color:$dark_orange;
+			//background-color:$dark_orange;
+			background-color:rgba(221,135,62,$alpha)
 		}
 
 		&.forestation{
-			background-color:$teal;
+			//background-color:$teal;
+			background-color:rgba(12,171,160,$alpha)
 		}
 
 		&.plants{
-			background-color:$green;
+			//background-color:$green;
+			background-color:rgba(149,198,98,$alpha)
 		}
 
-		$alpha : .5;
+		
 
 		&.orange{
 			//background-color:$dark_orange;
