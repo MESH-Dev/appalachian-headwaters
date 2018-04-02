@@ -51,7 +51,7 @@ footer{
 			.mobile-phone{
 				display:none;
 				@media ($bp-smaller-than-mobile){
-					display:block;
+					display:inline-block;
 				}
 			}
 		}
