@@ -25,7 +25,7 @@ $hero_background = get_field('hero_image');
 		
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			
-			<div class="post columns-9">
+			<div class="post columns-9 the-content">
 				<!-- <h1><?php the_title(); ?></h1> -->
 				<!-- <h1 class="postinfo">By <?php the_author(); ?> &#9679; <?php the_date('m/d/Y'); ?></h1> -->
 				

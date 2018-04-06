@@ -337,28 +337,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 58, sass/base/_typography.scss */
 h1 {
-  font-size: 4.6rem;
+  font-size: 4.6em;
   line-height: 1.2;
   letter-spacing: .03em;
 }
 
 /* line 59, sass/base/_typography.scss */
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.2em;
   line-height: 1.25;
   letter-spacing: .03em;
 }
 
 /* line 60, sass/base/_typography.scss */
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.4em;
   line-height: 1.3;
   letter-spacing: .03em;
 }
 
 /* line 61, sass/base/_typography.scss */
 h4 {
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1.35;
   letter-spacing: .03em;
 }
@@ -372,7 +372,7 @@ h5 {
 
 /* line 63, sass/base/_typography.scss */
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   line-height: 1.6;
   letter-spacing: .03em;
 }
@@ -380,32 +380,32 @@ h6 {
 @media (max-width: 750px) {
   /* line 67, sass/base/_typography.scss */
   h1 {
-    font-size: 3.6rem;
+    font-size: 3.6em;
   }
 
   /* line 68, sass/base/_typography.scss */
   h2 {
-    font-size: 3rem;
+    font-size: 3em;
   }
 
   /* line 69, sass/base/_typography.scss */
   h3 {
-    font-size: 2.2rem;
+    font-size: 2.2em;
   }
 
   /* line 70, sass/base/_typography.scss */
   h4 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
 
   /* line 71, sass/base/_typography.scss */
   h5 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
 
   /* line 72, sass/base/_typography.scss */
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
   }
 }
 /* line 75, sass/base/_typography.scss */
@@ -447,12 +447,12 @@ h3 {
 }
 
 /* line 103, sass/base/_typography.scss */
-h4 {
+h4, h6 {
   color: #6698CC;
 }
 
 /* line 109, sass/base/_typography.scss */
-.the-content h2, .the-content h3, .the-content h4, .the-content h5, .the-content h6 {
+.the-content h1, .the-content h2, .the-content h3, .the-content h4, .the-content h5, .the-content h6 {
   text-transform: uppercase;
 }
 

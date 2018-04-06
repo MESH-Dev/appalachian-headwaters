@@ -22,14 +22,15 @@ get_header();
 
 <section class="hero-banner" style="background-image:url(<?php echo $hero_URL; ?>); background-size:cover; background-repeat:no-repeat; height:100vh;">
 	<div class="content">
-		<h2>Page Not Found<br />
-		The page you requested could not be found.<br />
-		Try again using the list of pages below</h2>
-		<?php get_template_part('/partials/down-arrow'); ?>
+		<h2 class="page-title">
+		Sorry, we couldn't find that page.<br />
+		It's not your fault, it's ours.  Would you like to visit<br />
+		the <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">homepage</a> and start again?</h2>
+		<?php //get_template_part('/partials/down-arrow'); ?>
 	</div>
 </section>
 
-<main id="content">
+<!--<main id="content">
 	<div class="wrapper four-oh-four">
 		<div class="container">
 			<div class="inner-content">
@@ -39,7 +40,7 @@ get_header();
 			</div>
 		</div>
 	</div>
-</main><!-- End of Content-->
+</main> End of Content-->
 
 
 <?php //get_sidebar(); ?>
