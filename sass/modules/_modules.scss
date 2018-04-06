@@ -186,11 +186,11 @@ img{
 }
 
 a{
-	color:$black;
+	color:$dark_orange;
 	&:hover,
 	&:active,
 	&:focus{
-		color:$dark_orange;
+		color:$black;
 		text-decoration: none;
 	}
 }
