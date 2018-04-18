@@ -38,7 +38,35 @@ get_header();
 				<div class="hyphen" aria-hidden="true"></div>
 			</article>
 		</div>
-		<?php } else{
+		<?php }elseif($grid_type == 'text-with-title'){ 
+				$text_section_title = get_sub_field('text_title');
+				//var_dump($text_section_title);
+			?>
+			<section class="container">
+			<div class="row">
+				<h2><?php echo $text_section_title; ?></h2>
+				<?php 
+						$text_count = count(get_sub_field('columns'));
+						if (have_rows('columns')):
+						$col_cnt = 0;
+						
+						while(have_rows('columns')):the_row();
+						$col_cnt++;
+						$column = get_sub_field('column');
+						$col_class="";
+						if($text_count == 2){
+							$col_class = "columns-6";
+						}
+						?>
+						<article class="text <?php echo $col_class; ?>">
+							<p> <?php echo $column; ?></p>
+						</article>
+
+
+					<?php endwhile; endif; ?>
+			</div>
+		</section>
+	<?php } elseif($grid_type == 'blocks'){
 
 			$block_count = count(get_sub_field('grid_block'));
 
@@ -103,7 +131,7 @@ get_header();
 		<?php endwhile; ?>
 			</div>
 	<?php endif; } 
-			endwhile; endif;
+			endwhile; endif; //end outer row loop
 
 	?>
 	</section>

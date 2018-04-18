@@ -38,7 +38,7 @@ header{
 		//display:none;
 		//@media ($bp-smaller-than-mobile){
 			display:inline-block;
-		    padding: 4px 1em 0 1em;
+		    padding: 4px 1em 0 5px;
     		position: absolute;
 		//}
 	}
@@ -355,6 +355,7 @@ header{
 						.sub-menu{
 							left:0;
 							transform:scaleY(1);
+							padding:0 1.5em;
 						}
 					}
 				}
@@ -380,6 +381,7 @@ header{
 					top:100%;
 					//border-top:2px solid $white;
 					margin:0;
+
 					//  Margin top is the .hyphen transform offset - height 
 					//  of the element (.75em - .2em)
 					//margin-top:.55em;

@@ -936,7 +936,7 @@ header .mobile-menu-trigger {
 /* line 37, sass/modules/_header.scss */
 header .subnav-trigger, header .hover-arrow {
   display: inline-block;
-  padding: 4px 1em 0 1em;
+  padding: 4px 1em 0 5px;
   position: absolute;
 }
 /* line 50, sass/modules/_header.scss */
@@ -1159,14 +1159,15 @@ header .main-navigation ul li {
   header .main-navigation ul li:hover .sub-menu, header .main-navigation ul li:active .sub-menu, header .main-navigation ul li:focus .sub-menu {
     left: 0;
     transform: scaleY(1);
+    padding: 0 1.5em;
   }
 }
-/* line 367, sass/modules/_header.scss */
+/* line 368, sass/modules/_header.scss */
 header .main-navigation ul li.menu-item-has-children:hover .hyphen, header .main-navigation ul li.menu-item-has-children:focus .hyphen, header .main-navigation ul li.menu-item-has-children:active .hyphen {
   width: 100%;
   z-index: 2;
 }
-/* line 377, sass/modules/_header.scss */
+/* line 378, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu {
   position: absolute;
   left: -99999px;
@@ -1179,33 +1180,33 @@ header .main-navigation ul li .sub-menu {
   background: rgba(15, 15, 15, 0.5);
 }
 @media (min-width: 750px) {
-  /* line 377, sass/modules/_header.scss */
+  /* line 378, sass/modules/_header.scss */
   header .main-navigation ul li .sub-menu {
     display: block !important;
   }
 }
-/* line 399, sass/modules/_header.scss */
+/* line 401, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .wrap {
   padding-bottom: 0;
 }
-/* line 403, sass/modules/_header.scss */
+/* line 405, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .sub-menu {
   left: -99999px;
   top: 0;
 }
-/* line 418, sass/modules/_header.scss */
+/* line 420, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li.menu-item-has-children .sub-menu li a:after {
   content: '';
   display: none;
 }
 @media (min-width: 750px) {
-  /* line 431, sass/modules/_header.scss */
+  /* line 433, sass/modules/_header.scss */
   header .main-navigation ul li .sub-menu li:hover .sub-menu, header .main-navigation ul li .sub-menu li:active .sub-menu, header .main-navigation ul li .sub-menu li:focus .sub-menu {
     left: 100%;
     top: 0;
   }
 }
-/* line 439, sass/modules/_header.scss */
+/* line 441, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .icon {
   position: absolute;
   width: 1px;
@@ -1216,22 +1217,22 @@ header .main-navigation ul li .sub-menu .icon {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-/* line 450, sass/modules/_header.scss */
+/* line 452, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li {
   display: list-item;
   text-align: center;
   width: 100%;
   margin: .5em 0 .5em 0;
 }
-/* line 456, sass/modules/_header.scss */
+/* line 458, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li:first-child {
   margin: 1em 0 .5em 0;
 }
-/* line 460, sass/modules/_header.scss */
+/* line 462, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li:last-child {
   margin: .5em 0 1em 0;
 }
-/* line 464, sass/modules/_header.scss */
+/* line 466, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li .hyphen {
   position: absolute;
   width: 1px;
@@ -1242,7 +1243,7 @@ header .main-navigation ul li .sub-menu li .hyphen {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-/* line 480, sass/modules/_header.scss */
+/* line 482, sass/modules/_header.scss */
 header .main-navigation ul li .icon {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1255,19 +1256,19 @@ header .main-navigation ul li .icon {
   transition: transform .2s linear, opacity .3s linear;
   transition-delay: .2s;
 }
-/* line 494, sass/modules/_header.scss */
+/* line 496, sass/modules/_header.scss */
 header .main-navigation ul li.beekeeping .icon {
   background-image: url(img/beewhite2x.png);
 }
-/* line 499, sass/modules/_header.scss */
+/* line 501, sass/modules/_header.scss */
 header .main-navigation ul li.plants .icon {
   background-image: url(img/plantwhite2x.png);
 }
-/* line 504, sass/modules/_header.scss */
+/* line 506, sass/modules/_header.scss */
 header .main-navigation ul li.reforestation .icon {
   background-image: url(img/leafwhite2x.png);
 }
-/* line 509, sass/modules/_header.scss */
+/* line 511, sass/modules/_header.scss */
 header .main-navigation ul li .hyphen {
   margin: 0 auto;
   height: .2em;
@@ -1276,21 +1277,21 @@ header .main-navigation ul li .hyphen {
   opacity: 0;
   transition: transform .2s linear, opacity .3s linear, width .2s linear;
 }
-/* line 518, sass/modules/_header.scss */
+/* line 520, sass/modules/_header.scss */
 header .main-navigation ul li .wrap {
   display: table;
   width: 100%;
   text-align: center;
   padding-bottom: .75em;
 }
-/* line 523, sass/modules/_header.scss */
+/* line 525, sass/modules/_header.scss */
 header .main-navigation ul li .wrap:after {
   position: absolute;
   width: 2em;
   margin: 0 auto;
   bottom: 100%;
 }
-/* line 532, sass/modules/_header.scss */
+/* line 534, sass/modules/_header.scss */
 header .main-navigation ul li .content {
   height: initial;
   display: table-cell;
@@ -1298,7 +1299,7 @@ header .main-navigation ul li .content {
   text-align: center;
   vertical-align: bottom;
 }
-/* line 540, sass/modules/_header.scss */
+/* line 542, sass/modules/_header.scss */
 header .main-navigation ul li a {
   font-family: "franklin-gothic-urw";
   font-weight: 500;
@@ -1306,67 +1307,67 @@ header .main-navigation ul li a {
   text-transform: uppercase;
   font-size: 1.6em;
 }
-/* line 546, sass/modules/_header.scss */
+/* line 548, sass/modules/_header.scss */
 header .main-navigation ul li a:hover, header .main-navigation ul li a:active, header .main-navigation ul li a:focus {
   text-decoration: none;
 }
-/* line 558, sass/modules/_header.scss */
+/* line 560, sass/modules/_header.scss */
 header .main-navigation ul li:hover .hyphen, header .main-navigation ul li:active .hyphen, header .main-navigation ul li:focus .hyphen, header .main-navigation ul li.current_page_item .hyphen, header .main-navigation ul li.current_page_ancestor .hyphen {
   transform: translateY(0em);
   opacity: 1;
 }
-/* line 563, sass/modules/_header.scss */
+/* line 565, sass/modules/_header.scss */
 header .main-navigation ul li:hover .icon, header .main-navigation ul li:active .icon, header .main-navigation ul li:focus .icon, header .main-navigation ul li.current_page_item .icon, header .main-navigation ul li.current_page_ancestor .icon {
   transform: translateY(0em);
   opacity: 1;
 }
-/* line 574, sass/modules/_header.scss */
+/* line 576, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent a {
   color: #E5AB41;
 }
-/* line 579, sass/modules/_header.scss */
+/* line 581, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent svg .arrow {
   fill: #E5AB41 !important;
 }
-/* line 584, sass/modules/_header.scss */
+/* line 586, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent ul a {
   color: #FFFFFF;
 }
-/* line 589, sass/modules/_header.scss */
+/* line 591, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent ul li.current_page_item a {
   color: #E5AB41;
   border-bottom: 2px solid #E5AB41;
 }
-/* line 602, sass/modules/_header.scss */
+/* line 604, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_item.menu-item-has-children .hyphen {
   opacity: 1;
   transform: translateY(0em);
 }
-/* line 606, sass/modules/_header.scss */
+/* line 608, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_item.menu-item-has-children .icon {
   transform: translateY(0em);
   opacity: 1;
 }
 
-/* line 638, sass/modules/_header.scss */
+/* line 640, sass/modules/_header.scss */
 .single-post .main-navigation li.journal .hyphen {
   transform: translateY(0.75em);
   opacity: 1;
 }
-/* line 643, sass/modules/_header.scss */
+/* line 645, sass/modules/_header.scss */
 .single-post .main-navigation li.journal .icon {
   transform: translateY(0em);
   opacity: 1;
 }
 
-/* line 651, sass/modules/_header.scss */
+/* line 653, sass/modules/_header.scss */
 #wpadminbar {
   position: fixed !important;
   bottom: 0 !important;
   top: auto !important;
 }
 
-/* line 657, sass/modules/_header.scss */
+/* line 659, sass/modules/_header.scss */
 html {
   margin-top: 0px !important;
 }
