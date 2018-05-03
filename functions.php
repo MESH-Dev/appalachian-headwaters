@@ -173,7 +173,7 @@ function new_excerpt_more($more) {
     $arrow  = $directory.$imgs;
     $arrow_icon = file_get_contents($arrow);
     $arrow_clean = str_replace(array("\r\n", "\r", "\n"), '',$arrow_icon);
-    return '... <p><a class="more-link" href="'. get_permalink($post->ID) . '"><span class="text">Learn More about our story<span><span class="img">'.$arrow_clean.'</span></a></p>';
+    return '... <p><a class="more-link" href="'. get_permalink($post->ID) . '"><span class="text">Read More<span><span class="img">'.$arrow_clean.'</span></a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
