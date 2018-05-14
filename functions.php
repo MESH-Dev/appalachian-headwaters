@@ -17,12 +17,12 @@ function my_custom_login_logo() {
 }
 
 function list_menu($atts, $content = null) {
-    extract(shortcode_atts(array(  
-        'menu'            => '', 
-        'container'       => 'div', 
-        'container_class' => '', 
-        'container_id'    => '', 
-        'menu_class'      => 'menu', 
+    extract(shortcode_atts(array(
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => '',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
         'menu_id'         => '',
         'echo'            => true,
         'fallback_cb'     => 'wp_page_menu',
@@ -32,16 +32,16 @@ function list_menu($atts, $content = null) {
         'link_after'      => '',
         'depth'           => 0,
         'walker'          => '',
-        'theme_location'  => ''), 
+        'theme_location'  => ''),
         $atts));
- 
- 
-    return wp_nav_menu( array( 
-        'menu'            => $menu, 
-        'container'       => $container, 
-        'container_class' => $container_class, 
-        'container_id'    => $container_id, 
-        'menu_class'      => $menu_class, 
+
+
+    return wp_nav_menu( array(
+        'menu'            => $menu,
+        'container'       => $container,
+        'container_class' => $container_class,
+        'container_id'    => $container_id,
+        'menu_class'      => $menu_class,
         'menu_id'         => $menu_id,
         'echo'            => false,
         'fallback_cb'     => $fallback_cb,
@@ -71,9 +71,9 @@ function loadmore_ajaxurl() {
 			);
 
 		 $the_query = new WP_Query($args);
-   		
+
 	wp_register_script( 'my_loadmore', get_template_directory_uri().'/js/myloadmore.js', array('jquery'), true);
- 
+
 
    	wp_localize_script( 'my_loadmore', 'loadmore_params', array(
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
@@ -81,7 +81,7 @@ function loadmore_ajaxurl() {
 		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
 		'max_page' => $the_query->max_num_pages
 	) );
-    
+
    		wp_enqueue_script( 'my_loadmore',get_template_directory_uri().'/js/myloadmore.js', array('jquery'),true);
 
      }
@@ -99,13 +99,13 @@ function pluginname_ajaxurl() {
 
 
 function loadmore_ajax_handler(){
- 
+
 	// prepare our arguments for the query
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	//var_dump('Args= '.$args);
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
 	$args['post_status'] = 'publish';
- 
+
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
 
@@ -115,18 +115,18 @@ function loadmore_ajax_handler(){
 	// 		);
 
 	// 	$the_query = new WP_Query($args);
- 
+
 	if( have_posts() ) :
- 
+
 		// run the loop
 		while( have_posts() ): the_post();
- 
+
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
 			// do you remember? - my example is adapted for Twenty Seventeen theme
 			//get_template_part( 'template-parts/post/content', get_post_format() );
 			// for the test purposes comment the line above and uncomment the below one
 			// the_title();
-			
+
  			echo '<article class="post row">';
  			echo '<div class="columns-6">';
  			echo '<h2>'.get_the_title(). '</a></h2>';
@@ -144,10 +144,10 @@ function loadmore_ajax_handler(){
  				echo '</div>';
  			}
  			echo '</article>';
- 			
- 
+
+
 		endwhile;
- 
+
 	endif;
 	die; // here we exit the script and even no wp_reset_query() required!
 }
@@ -173,9 +173,9 @@ function new_excerpt_more($more) {
     $arrow  = $directory.$imgs;
     $arrow_icon = file_get_contents($arrow);
     $arrow_clean = str_replace(array("\r\n", "\r", "\n"), '',$arrow_icon);
-    return '... <p><a class="more-link" href="'. get_permalink($post->ID) . '"><span class="text">Read More<span><span class="img">'.$arrow_clean.'</span></a></p>';
+    return $more . '<p><a class="more-link" href="'. get_permalink($post->ID) . '"><span class="text">Read More<span><span class="img">'.$arrow_clean.'</span></a></p>';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('the_excerpt', 'new_excerpt_more');
 
 //Add/Change excerpt
 // function new_excerpt_more( $more ) {

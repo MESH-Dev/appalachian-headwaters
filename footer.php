@@ -1,4 +1,4 @@
- 
+
 
 <footer class="site-footer">
 	<div class="brand-row row">
@@ -8,14 +8,15 @@
 			</div>
 			<div class="columns-5">
 				<p class="address">
-					<span>123 Examble Street, City Name, State Name, 12345</span><br />
-					<span><span class="phone">123-456-7890</span><span class="mobile-phone"><a href="tel:123-456-7890">123-456-7890</a></span> | <a href="mailto:info@example.com">info@example.com</a></span>
+					<span>Physical Address: 1046 Washington Street East, Suite 1, Lewisburg, WV 24901</span><br />
+               <span>Mailing Address: PO Box 468, Lewisburg, WV 24901</span><br />
+					<span><span class="phone">304.645.9008</span><span class="mobile-phone"><a href="tel:304-645-9008">304.645.9008</a></span> | <a href="mailto:info@appheadwaters.org">info@appheadwaters.org</a></span>
 				</p>
 			</div>
 			<div class="columns-5">
 				<ul class="social-nav">
 					<li>
-						<a href="#">
+						<a href="https://www.facebook.com/appalbeecollective/">
 							<span class="sr-only">Appalachian Headwaters on Facebook</span>
 							<span class="fa-stack">
 						  		<i class="fas fa-circle fa-stack-2x"></i>
@@ -23,7 +24,7 @@
 							</span>
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#">
 							<span class="sr-only">Appalachian Headwaters twitter feed</span>
 							<span class="fa-stack">
@@ -31,9 +32,9 @@
 							  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
 							</span>
 						</a>
-					</li>
+					</li> -->
 					<li>
-						<a href="#">
+						<a href="https://www.instagram.com/appalbeecollective/">
 							<span class="sr-only">Appalachian Headwaters on Instagram feed</span>
 							<span class="fa-stack">
 							  <i class="fas fa-circle fa-stack-2x"></i>
@@ -41,7 +42,7 @@
 							</span>
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#">
 							<span class="sr-only">Appalachian Headwaters on Linkedin</span>
 							<span class="fa-stack">
@@ -49,12 +50,12 @@
 							  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
 							</span>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="signature-row row">
 		<div class="copyright columns-6">
 			&copy; <?php echo date('Y'); ?> Appalachian Headwaters
@@ -63,7 +64,7 @@
 			Designed by <a href="http://meshfresh.com" target="_blank">MESH</a>
 		</div>
 		<!-- End of Footer -->
-	
+
 	</div>
 
 </footer>
