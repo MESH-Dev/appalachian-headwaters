@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 
 $hero_background = get_field('hero_image');
 	$hero_URL = $hero_background['sizes']['background-fullscreen'];
@@ -22,20 +22,20 @@ $hero_background = get_field('hero_image');
 		<div class="wrapper post-single">
 		<div class="container">
 			<div class="row">
-		
+
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			
+
 			<div class="post columns-9">
-				<!-- <h1><?php the_title(); ?></h1> -->
-				<h1 class="postinfo">By <?php the_author(); ?> &#9679; <?php the_date('m/d/Y'); ?></h1>
-				
+				<!-- <h1><//?php the_title(); ?></h1> -->
+				<h1 class="postinfo"><?php the_date('m/d/Y'); ?></h1>
+
 				<?php the_content(); ?>
 				<!-- Go to www.addthis.com/dashboard to customize your tools -->
 				<div class="social-share"><span>Share this on: <span> <div class="addthis_inline_share_toolbox"></div></div>
 			</div>
-			
+
 			<?php //comments_template( '', true ); ?>
-			
+
 		<?php endwhile; ?>
 		</div>
 		</div>
