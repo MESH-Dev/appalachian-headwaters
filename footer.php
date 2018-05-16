@@ -16,7 +16,7 @@
 			<div class="columns-5">
 				<ul class="social-nav">
 					<li>
-						<a href="https://www.facebook.com/appalbeecollective/">
+						<a href="https://www.facebook.com/appalbeecollective/" target="_blank">
 							<span class="sr-only">Appalachian Headwaters on Facebook</span>
 							<span class="fa-stack">
 						  		<i class="fas fa-circle fa-stack-2x"></i>
@@ -34,7 +34,7 @@
 						</a>
 					</li> -->
 					<li>
-						<a href="https://www.instagram.com/appalbeecollective/">
+						<a href="https://www.instagram.com/appalbeecollective/" target="_blank">
 							<span class="sr-only">Appalachian Headwaters on Instagram feed</span>
 							<span class="fa-stack">
 							  <i class="fas fa-circle fa-stack-2x"></i>
