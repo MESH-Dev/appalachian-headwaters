@@ -59,7 +59,9 @@ get_header();
 						}
 						?>
 						<article class="text <?php echo $col_class; ?>">
-							<p> <?php echo $column; ?></p>
+							<div class="wrapper">
+								<p> <?php echo $column; ?></p>
+							</div>
 						</article>
 
 

@@ -73,7 +73,7 @@ function _resize(){
   console.log($wW);
 
 
-  if($wW <= 769){
+  if($wW <= 1100){
     $('.main-navigation').css({'display':'none'});
 
     //$('.main-navigation ul > li.menu-item-has-children .wrap .content').append(arrow);
