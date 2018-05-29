@@ -967,7 +967,6 @@ header .main-navigation .menu li a:hover, header .main-navigation .menu li a:foc
 }
 /* line 96, sass/modules/_header.scss */
 header .logo {
-  text-align: center;
   margin-top: 2.2em;
   display: block;
   position: absolute;
@@ -975,6 +974,7 @@ header .logo {
 @media (min-width: 1200px) {
   /* line 96, sass/modules/_header.scss */
   header .logo {
+    text-align: left;
     width: 19%;
     display: inline-block;
     position: initial;
@@ -986,185 +986,186 @@ header .logo {
     top: -8em;
     left: 50%;
     margin-left: -100px;
+    text-align: center;
   }
 }
-/* line 115, sass/modules/_header.scss */
+/* line 116, sass/modules/_header.scss */
 header .logo img {
   width: 200px;
 }
-/* line 122, sass/modules/_header.scss */
+/* line 123, sass/modules/_header.scss */
 header .logo:hover img, header .logo:active img, header .logo:focus img {
   opacity: .6;
 }
-/* line 128, sass/modules/_header.scss */
+/* line 129, sass/modules/_header.scss */
 header .main-navigation {
   display: inline-block;
   width: 40%;
   vertical-align: top;
 }
-/* line 136, sass/modules/_header.scss */
+/* line 137, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li .hover-arrow {
   opacity: 0;
   transform: translateX(0.25em);
   transition: opacity .2s linear, transform .3s linear;
 }
-/* line 146, sass/modules/_header.scss */
+/* line 147, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li:focus a, header .main-navigation ul.sub-menu li:active a, header .main-navigation ul.sub-menu li:hover a {
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 154, sass/modules/_header.scss */
+/* line 155, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li:focus .sub-menu li a, header .main-navigation ul.sub-menu li:active .sub-menu li a, header .main-navigation ul.sub-menu li:hover .sub-menu li a {
   color: #FFFFFF;
 }
-/* line 160, sass/modules/_header.scss */
+/* line 161, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:hover .hover-arrow {
   opacity: 1;
   transform: translateX(0);
 }
 @media (max-width: 1100px) {
-  /* line 160, sass/modules/_header.scss */
+  /* line 161, sass/modules/_header.scss */
   header .main-navigation ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:hover .hover-arrow {
     opacity: 0;
   }
 }
-/* line 175, sass/modules/_header.scss */
+/* line 176, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li:focus ul.sub-menu li .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li .hover-arrow {
   opacity: 0;
   transform: translateX(0.25em);
   transition: opacity .2s linear, transform .3s linear;
 }
-/* line 184, sass/modules/_header.scss */
+/* line 185, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li:focus ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:focus ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:focus ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:focus .hover-arrow {
   opacity: 1;
   transform: translateX(0);
 }
 @media (max-width: 1100px) {
-  /* line 184, sass/modules/_header.scss */
+  /* line 185, sass/modules/_header.scss */
   header .main-navigation ul.sub-menu li:focus ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:focus ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:focus ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:active ul.sub-menu li:focus .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:hover .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:active .hover-arrow, header .main-navigation ul.sub-menu li:hover ul.sub-menu li:focus .hover-arrow {
     opacity: 0;
   }
 }
-/* line 205, sass/modules/_header.scss */
+/* line 206, sass/modules/_header.scss */
 header .main-navigation ul.sub-menu li ul.sub-menu li:focus a, header .main-navigation ul.sub-menu li ul.sub-menu li:active a, header .main-navigation ul.sub-menu li ul.sub-menu li:hover a {
   color: #FFFFFF;
   text-decoration: none;
 }
 @media (max-width: 1200px) {
-  /* line 128, sass/modules/_header.scss */
+  /* line 129, sass/modules/_header.scss */
   header .main-navigation {
     width: 49%;
   }
 }
 @media (max-width: 1100px) {
-  /* line 128, sass/modules/_header.scss */
+  /* line 129, sass/modules/_header.scss */
   header .main-navigation {
     display: block;
     width: 100%;
     background: rgba(15, 15, 15, 0.8);
     padding: 0 1em;
   }
-  /* line 224, sass/modules/_header.scss */
+  /* line 225, sass/modules/_header.scss */
   header .main-navigation ul {
     margin: 0;
   }
-  /* line 226, sass/modules/_header.scss */
+  /* line 227, sass/modules/_header.scss */
   header .main-navigation ul li {
     padding: .5em 0;
   }
-  /* line 229, sass/modules/_header.scss */
+  /* line 230, sass/modules/_header.scss */
   header .main-navigation ul li:first-child {
     padding: 1em 0 .5em 0;
   }
-  /* line 233, sass/modules/_header.scss */
+  /* line 234, sass/modules/_header.scss */
   header .main-navigation ul li:last-child {
     padding: .5em 0 1em 0;
   }
-  /* line 238, sass/modules/_header.scss */
+  /* line 239, sass/modules/_header.scss */
   header .main-navigation ul li.current-menu-item a {
     color: #E5AB41;
   }
-  /* line 243, sass/modules/_header.scss */
+  /* line 244, sass/modules/_header.scss */
   header .main-navigation ul li.current-menu-item .sub-menu a {
     color: #FFFFFF;
   }
-  /* line 252, sass/modules/_header.scss */
+  /* line 253, sass/modules/_header.scss */
   header .main-navigation a:hover, header .main-navigation a:focus, header .main-navigation a:active {
     color: #E5AB41;
     text-decoration: none;
   }
-  /* line 261, sass/modules/_header.scss */
+  /* line 262, sass/modules/_header.scss */
   header .main-navigation .wrap {
     padding-bottom: 0 !important;
   }
-  /* line 265, sass/modules/_header.scss */
+  /* line 266, sass/modules/_header.scss */
   header .main-navigation .icon, header .main-navigation .hyphen {
     display: none;
   }
-  /* line 269, sass/modules/_header.scss */
+  /* line 270, sass/modules/_header.scss */
   header .main-navigation li {
     display: list-item !important;
     width: 100% !important;
   }
-  /* line 274, sass/modules/_header.scss */
+  /* line 275, sass/modules/_header.scss */
   header .main-navigation .wrap, header .main-navigation .content {
     display: block;
   }
-  /* line 278, sass/modules/_header.scss */
+  /* line 279, sass/modules/_header.scss */
   header .main-navigation .sub-menu {
     display: none;
     position: initial !important;
     transform: scaleY(1) !important;
     background: transparent !important;
   }
-  /* line 285, sass/modules/_header.scss */
+  /* line 286, sass/modules/_header.scss */
   header .main-navigation .sub-menu .sub-menu {
     display: none;
   }
 }
 @media (max-width: 1100px) {
-  /* line 291, sass/modules/_header.scss */
+  /* line 292, sass/modules/_header.scss */
   header .main-navigation:nth-of-type(1) {
     border-top: 2px solid #FFFFFF;
   }
 }
 @media (max-width: 1100px) {
-  /* line 300, sass/modules/_header.scss */
+  /* line 301, sass/modules/_header.scss */
   header .main-navigation:nth-of-type(2) ul li:first-child {
     padding: 0 0 .5em 0;
   }
 }
 @media (max-width: 1100px) {
-  /* line 313, sass/modules/_header.scss */
+  /* line 314, sass/modules/_header.scss */
   header .main-navigation {
     display: none;
   }
-  /* line 316, sass/modules/_header.scss */
+  /* line 317, sass/modules/_header.scss */
   header .main-navigation a:after {
     content: '';
     display: none;
   }
 }
-/* line 321, sass/modules/_header.scss */
+/* line 322, sass/modules/_header.scss */
 header .main-navigation ul {
   height: initial;
   width: 100%;
 }
-/* line 325, sass/modules/_header.scss */
+/* line 326, sass/modules/_header.scss */
 header .main-navigation ul > li {
   margin-bottom: 0;
 }
 @media (min-width: 1100px) {
-  /* line 329, sass/modules/_header.scss */
+  /* line 330, sass/modules/_header.scss */
   header .main-navigation ul > li .subnav-trigger {
     opacity: 0;
   }
-  /* line 335, sass/modules/_header.scss */
+  /* line 336, sass/modules/_header.scss */
   header .main-navigation ul > li .sub-menu li .subnav-trigger {
     opacity: 0;
   }
 }
-/* line 370, sass/modules/_header.scss */
+/* line 371, sass/modules/_header.scss */
 header .main-navigation ul li {
   width: 32.333333%;
   text-align: center;
@@ -1173,19 +1174,19 @@ header .main-navigation ul li {
   cursor: pointer;
 }
 @media (min-width: 1100px) {
-  /* line 386, sass/modules/_header.scss */
+  /* line 387, sass/modules/_header.scss */
   header .main-navigation ul li:hover .sub-menu, header .main-navigation ul li:active .sub-menu, header .main-navigation ul li:focus .sub-menu {
     left: 0;
     transform: scaleY(1);
     padding: 0 1.5em;
   }
 }
-/* line 399, sass/modules/_header.scss */
+/* line 400, sass/modules/_header.scss */
 header .main-navigation ul li.menu-item-has-children:hover .hyphen, header .main-navigation ul li.menu-item-has-children:focus .hyphen, header .main-navigation ul li.menu-item-has-children:active .hyphen {
   width: 100%;
   z-index: 2;
 }
-/* line 409, sass/modules/_header.scss */
+/* line 410, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu {
   position: absolute;
   left: -99999px;
@@ -1198,33 +1199,33 @@ header .main-navigation ul li .sub-menu {
   background: rgba(15, 15, 15, 0.5);
 }
 @media (min-width: 1100px) {
-  /* line 409, sass/modules/_header.scss */
+  /* line 410, sass/modules/_header.scss */
   header .main-navigation ul li .sub-menu {
     display: block !important;
   }
 }
-/* line 432, sass/modules/_header.scss */
+/* line 433, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .wrap {
   padding-bottom: 0;
 }
-/* line 436, sass/modules/_header.scss */
+/* line 437, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .sub-menu {
   left: -99999px;
   top: 0;
 }
-/* line 451, sass/modules/_header.scss */
+/* line 452, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li.menu-item-has-children .sub-menu li a:after {
   content: '';
   display: none;
 }
 @media (min-width: 480px) {
-  /* line 464, sass/modules/_header.scss */
+  /* line 465, sass/modules/_header.scss */
   header .main-navigation ul li .sub-menu li:hover .sub-menu, header .main-navigation ul li .sub-menu li:active .sub-menu, header .main-navigation ul li .sub-menu li:focus .sub-menu {
     left: 100%;
     top: 0;
   }
 }
-/* line 472, sass/modules/_header.scss */
+/* line 473, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu .icon {
   position: absolute;
   width: 1px;
@@ -1235,22 +1236,22 @@ header .main-navigation ul li .sub-menu .icon {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-/* line 483, sass/modules/_header.scss */
+/* line 484, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li {
   display: list-item;
   text-align: center;
   width: 100%;
   margin: .5em 0 .5em 0;
 }
-/* line 489, sass/modules/_header.scss */
+/* line 490, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li:first-child {
   margin: 1em 0 .5em 0;
 }
-/* line 493, sass/modules/_header.scss */
+/* line 494, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li:last-child {
   margin: .5em 0 1em 0;
 }
-/* line 497, sass/modules/_header.scss */
+/* line 498, sass/modules/_header.scss */
 header .main-navigation ul li .sub-menu li .hyphen {
   position: absolute;
   width: 1px;
@@ -1261,7 +1262,7 @@ header .main-navigation ul li .sub-menu li .hyphen {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-/* line 513, sass/modules/_header.scss */
+/* line 514, sass/modules/_header.scss */
 header .main-navigation ul li .icon {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1274,19 +1275,19 @@ header .main-navigation ul li .icon {
   transition: transform .2s linear, opacity .3s linear;
   transition-delay: .2s;
 }
-/* line 527, sass/modules/_header.scss */
+/* line 528, sass/modules/_header.scss */
 header .main-navigation ul li.beekeeping .icon {
   background-image: url(img/beewhite2x.png);
 }
-/* line 532, sass/modules/_header.scss */
+/* line 533, sass/modules/_header.scss */
 header .main-navigation ul li.plants .icon {
   background-image: url(img/plantwhite2x.png);
 }
-/* line 537, sass/modules/_header.scss */
+/* line 538, sass/modules/_header.scss */
 header .main-navigation ul li.reforestation .icon {
   background-image: url(img/leafwhite2x.png);
 }
-/* line 542, sass/modules/_header.scss */
+/* line 543, sass/modules/_header.scss */
 header .main-navigation ul li .hyphen {
   margin: 0 auto;
   height: .2em;
@@ -1295,21 +1296,21 @@ header .main-navigation ul li .hyphen {
   opacity: 0;
   transition: transform .2s linear, opacity .3s linear, width .2s linear;
 }
-/* line 551, sass/modules/_header.scss */
+/* line 552, sass/modules/_header.scss */
 header .main-navigation ul li .wrap {
   display: table;
   width: 100%;
   text-align: center;
   padding-bottom: .75em;
 }
-/* line 556, sass/modules/_header.scss */
+/* line 557, sass/modules/_header.scss */
 header .main-navigation ul li .wrap:after {
   position: absolute;
   width: 2em;
   margin: 0 auto;
   bottom: 100%;
 }
-/* line 565, sass/modules/_header.scss */
+/* line 566, sass/modules/_header.scss */
 header .main-navigation ul li .content {
   height: initial;
   display: table-cell;
@@ -1317,7 +1318,7 @@ header .main-navigation ul li .content {
   text-align: center;
   vertical-align: bottom;
 }
-/* line 573, sass/modules/_header.scss */
+/* line 574, sass/modules/_header.scss */
 header .main-navigation ul li a {
   font-family: "franklin-gothic-urw";
   font-weight: 500;
@@ -1325,67 +1326,67 @@ header .main-navigation ul li a {
   text-transform: uppercase;
   font-size: 1.6em;
 }
-/* line 579, sass/modules/_header.scss */
+/* line 580, sass/modules/_header.scss */
 header .main-navigation ul li a:hover, header .main-navigation ul li a:active, header .main-navigation ul li a:focus {
   text-decoration: none;
 }
-/* line 591, sass/modules/_header.scss */
+/* line 592, sass/modules/_header.scss */
 header .main-navigation ul li:hover .hyphen, header .main-navigation ul li:active .hyphen, header .main-navigation ul li:focus .hyphen, header .main-navigation ul li.current_page_item .hyphen, header .main-navigation ul li.current_page_ancestor .hyphen {
   transform: translateY(0em);
   opacity: 1;
 }
-/* line 596, sass/modules/_header.scss */
+/* line 597, sass/modules/_header.scss */
 header .main-navigation ul li:hover .icon, header .main-navigation ul li:active .icon, header .main-navigation ul li:focus .icon, header .main-navigation ul li.current_page_item .icon, header .main-navigation ul li.current_page_ancestor .icon {
   transform: translateY(0em);
   opacity: 1;
 }
-/* line 607, sass/modules/_header.scss */
+/* line 608, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent a {
   color: #E5AB41;
 }
-/* line 612, sass/modules/_header.scss */
+/* line 613, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent svg .arrow {
   fill: #E5AB41 !important;
 }
-/* line 617, sass/modules/_header.scss */
+/* line 618, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent ul a {
   color: #FFFFFF;
 }
-/* line 622, sass/modules/_header.scss */
+/* line 623, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_ancestor ul li.current-menu-parent ul li.current_page_item a {
   color: #E5AB41;
   border-bottom: 2px solid #E5AB41;
 }
-/* line 635, sass/modules/_header.scss */
+/* line 636, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_item.menu-item-has-children .hyphen {
   opacity: 1;
   transform: translateY(0em);
 }
-/* line 639, sass/modules/_header.scss */
+/* line 640, sass/modules/_header.scss */
 header .main-navigation ul li.current_page_item.menu-item-has-children .icon {
   transform: translateY(0em);
   opacity: 1;
 }
 
-/* line 671, sass/modules/_header.scss */
+/* line 672, sass/modules/_header.scss */
 .single-post .main-navigation li.journal .hyphen {
   transform: translateY(0.75em);
   opacity: 1;
 }
-/* line 676, sass/modules/_header.scss */
+/* line 677, sass/modules/_header.scss */
 .single-post .main-navigation li.journal .icon {
   transform: translateY(0em);
   opacity: 1;
 }
 
-/* line 684, sass/modules/_header.scss */
+/* line 685, sass/modules/_header.scss */
 #wpadminbar {
   position: fixed !important;
   bottom: 0 !important;
   top: auto !important;
 }
 
-/* line 690, sass/modules/_header.scss */
+/* line 691, sass/modules/_header.scss */
 html {
   margin-top: 0px !important;
 }
