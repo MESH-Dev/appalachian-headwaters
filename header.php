@@ -20,6 +20,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="meshdesign">
 	<meta name="host" content="">
+	<?php echo get_field('gsv_meta', 'options'); ?>
+	<?php echo get_field('bsv_meta', 'options'); ?>
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -77,6 +79,8 @@
 	</script>
 
 	<?php wp_head(); ?>
+	
+	<?php echo get_field('google_analytics_property', 'options'); ?>
 
 </head>
 

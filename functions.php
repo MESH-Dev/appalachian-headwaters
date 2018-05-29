@@ -56,6 +56,17 @@ function list_menu($atts, $content = null) {
 //Create the shortcode
 add_shortcode("listmenu", "list_menu");
 
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title'    => 'Global Site Settings',
+        'menu_title'    => 'Global Site Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
 //Add ajax functionality to pages, all not just in admin
 add_action('wp_enqueue_scripts','loadmore_ajaxurl');
 function loadmore_ajaxurl() {
