@@ -76,7 +76,7 @@ function loadmore_ajaxurl() {
 
 		$args = array(
 			'post_type' => 'post',
-			'posts_per_page' => 2,
+			'posts_per_page' => 4,
 			'order'=> 'DESC',
 			'orderby' => 'ID'
 			);
@@ -171,6 +171,11 @@ function custom_excerpt_length( $length ) {
 	return 60;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function custom_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
 /**
  * Replace the_excerpt "more" text with a link

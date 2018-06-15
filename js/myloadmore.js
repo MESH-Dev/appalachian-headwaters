@@ -1,6 +1,6 @@
 jQuery(function($){
 	var canBeLoaded = true, // this param allows to initiate the AJAX call only if necessary
-	    bottomOffset = 1000; // the distance (in px) from the page bottom when you want to load more posts
+	    bottomOffset = 1700; // the distance (in px) from the page bottom when you want to load more posts
  	
  	  //Force divs in homepage grid to be square
 //Setup variables to hold our sizes
@@ -101,7 +101,7 @@ $(window).resize(_resize);
  						//Show each item in it's turn
  						window.setTimeout(function(){
  						$(el).removeClass('hide').addClass('fadeIn');
- 							}, 50 * i);
+ 							}, 25 * i);
  						});
 						canBeLoaded = true; // the ajax is completed, now we can run it again
 						loadmore_params.current_page++;

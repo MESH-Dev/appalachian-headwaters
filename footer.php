@@ -8,8 +8,8 @@
 			</div>
 			<div class="columns-5">
 				<p class="address">
-					<span>Physical Address: 1046 Washington Street East, Suite 1, Lewisburg, WV 24901</span><br />
-               <span>Mailing Address: PO Box 468, Lewisburg, WV 24901</span><br />
+					<span>1046 Washington Street East, Suite 1, Lewisburg, WV 24901</span><br />
+               <span>PO Box 468, Lewisburg, WV 24901</span><br />
 					<span><span class="phone">304.645.9008</span><span class="mobile-phone"><a href="tel:304-645-9008">304.645.9008</a></span> | <a href="mailto:info@appheadwaters.org">info@appheadwaters.org</a></span>
 				</p>
 			</div>
